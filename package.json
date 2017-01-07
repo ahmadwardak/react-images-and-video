@@ -1,5 +1,5 @@
 {
-  "name": "react-images-jl",
+  "name": "react-images-jhl",
   "version": "0.5.2",
   "description": "A simple, responsive lightbox component for displaying an array of images with React.js",
   "main": "lib/Lightbox.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luojxxx/react-images-jl.git"
+    "url": "https://github.com/luojxxx/react-images-jhl.git"
   },
   "dependencies": {
     "aphrodite": "^0.5.0",

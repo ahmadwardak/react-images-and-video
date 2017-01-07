@@ -224,7 +224,9 @@ class Lightbox extends Component {
 					https://fb.me/react-unknown-prop is resolved
 					<Swipeable onSwipedLeft={this.gotoNext} onSwipedRight={this.gotoPrev} />
 				*/}
-				<img
+
+				{ (images[currentImage].fileType !== 'video') ?
+				(<img
 					className={css(classes.image)}
 					onClick={!!onClickImage && onClickImage}
 					sizes={sizes}
@@ -234,7 +236,8 @@ class Lightbox extends Component {
 						cursor: this.props.onClickImage ? 'pointer' : 'auto',
 						maxHeight: `calc(100vh - ${heightOffset})`,
 					}}
-				/>
+				/>):
+				(<video height='auto' width='auto' controls> <source src={images[currentImage].realFileName} /></video>)}
 				<Footer
 					caption={images[currentImage].caption}
 					countCurrent={currentImage + 1}

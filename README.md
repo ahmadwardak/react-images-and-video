@@ -9,7 +9,7 @@ A simple, responsive lightbox component for displaying an array of images.
 
 
 ```bash
-npm install --save react-images
+npm install --save git+https://github.com/luojxxx/react-images-and-video
 ```
 
 ```jsx
